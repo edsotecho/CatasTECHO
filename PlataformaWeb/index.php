@@ -30,7 +30,7 @@
 				$navegador=$obtenerDatos[2];
 				guardaSesion($fila['idusuario'],$usuario,$ip,$sistema,$navegador);				
 			
-				header("location: gestion/");
+				header("location: site/");
 			}
 			else
 			{
@@ -78,14 +78,13 @@
 	}
 ?>
 
-<?php include("/src/componentes/encabezadoIndex.php");?>
+<?php include("/src/cmp/encabezadoIndex.php");?>
 
 <body>
 
-        <?php include_once("analyticstracking.php") ?>
 
 	<?php
-        include("/src/componentes/menuPrincipal.php");
+        include("/src/cmp/menuPrincipal.php");
     ?>
 
 	<div class="container">
