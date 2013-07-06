@@ -1,7 +1,7 @@
 <?php
 	// datos para la conexion a mysql
-	define('DB_SERVER','localhost');
-	define('DB_NAME','CatastroNacional');
+	define('DB_SERVER','catastrotecho.no-ip.org');
+	define('DB_NAME','CatasTECHO');
 	define('DB_USER','root');
 	define('DB_PASS','$Krat05$');
 	
