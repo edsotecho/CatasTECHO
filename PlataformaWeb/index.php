@@ -1,7 +1,7 @@
 <?php
-	require_once("/src/sesion/sesion.class.php");
-	include_once "/src/conf/conexion.php";
-	include_once "/src/sesion/sesiones.php";
+	require_once("src/sesion/sesion.class.php");
+	include_once "src/conf/conexion.php";
+	include_once "src/sesion/sesiones.php";
 	
 
 	$sesion = new sesion();
@@ -78,13 +78,13 @@
 	}
 ?>
 
-<?php include("/src/cmp/encabezadoIndex.php");?>
+<?php include("src/cmp/encabezadoIndex.php");?>
 
 <body>
 
 
 	<?php
-        include("/src/cmp/menuPrincipal.php");
+        include("src/cmp/menuPrincipal.php");
     ?>
 
 	<div class="container">
