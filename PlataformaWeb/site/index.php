@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<link href="src/css/bootstrap.min.css" rel="stylesheet" media="screen">
- 	<script src="src/js/bootstrap.min.js"></script>
- 	<script src="http://code.jquery.com/jquery.js"></script>
 	<?php
 	?>
 	<head>
@@ -17,6 +14,9 @@
     			<li><a href="#">...</a></li>
     		</ul>
 		</div>
+		<?php
+    		include("/var/www/catasTECHO/src/cmp/estilos.php");
+		?>
 	</body>
 
 <footer>
