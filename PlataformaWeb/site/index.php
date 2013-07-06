@@ -14,6 +14,22 @@
     			</ul>
     		</div>
     	</div>
+    	
+    	<!-- Div de las Consultas -->
+    	<div id="divConsultas" class="row-fluid">
+    		
+    	</div>
+    	
+    	<!-- Div de los Datos -->
+    	<div id="divDatos" class="row-fluid">
+    		
+    	</div>
+    	
+    	<!-- Div de los Usuarios -->
+    	<div id="divUsuarios" class="row-fluid">
+    		
+    	</div>
+    	
 	</head>
 	<body>
     	
