@@ -4,9 +4,7 @@
 		include("/var/www/catasTECHO/src/cmp/encabezado.php");
 	?>
 	<head>
-	</head>
-	<body>
-    	<div class="navbar">
+		<div class="navbar">
     		<div class="navbar-inner">
    				<a class="brand" href="#">CatasTECHO</a>
     			<ul class="nav">
@@ -16,6 +14,9 @@
     			</ul>
     		</div>
     	</div>
+	</head>
+	<body>
+    	
 		<?php
     		include("/var/www/catasTECHO/src/cmp/estilos.php");
 		?>
