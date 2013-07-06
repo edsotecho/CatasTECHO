@@ -2,22 +2,24 @@
 	require_once("/var/www/html/src/sesion/sesion.class.php");
 	include_once "/var/www/html/src/conf/conexion.php";
 	include_once "/var/www/html/src/sesion/sesiones.php";
-	
 
 	$sesion = new sesion();
 	
 	if( isset($_POST["iniciar"]) )
 	{
-		$estatus=1;
+		
 		$usuario = $_POST["usuario"];
 		$password = md5($_POST["password"]);
 		
 		if(validarUsuario($usuario,$password) == true)
-		{			
-			$consulta = mysql_query("SELECT * FROM usuario WHERE usuario = '".$usuario."' and activo=".$estatus." and password = '".$password."'");
+		{	
+			$estatus=1;
+		
+		$consulta = mysql_query("SELECT * FROM usuario WHERE usuario = '".$usuario."' and activo=".$estatus." and password = '".$password."'");
 
 			if(mysql_num_rows($consulta) == 1) 
 			{
+
 				$fila=mysql_fetch_array($consulta);
 				$sesion->set("usuario",$usuario);
 				$sesion->set("nombre",$fila['nombre']);
@@ -28,7 +30,7 @@
 				$obtenerDatos=DatosPrivados();
 				$sistema=$obtenerDatos[1];
 				$navegador=$obtenerDatos[2];
-				guardaSesion($fila['idusuario'],$usuario,$ip,$sistema,$navegador);				
+				guardaSesion($fila['idusuario'],$usuario,$ip,$sistema,$navegador);			
 			
 				header("location: gestion/");
 			}
@@ -41,6 +43,7 @@
 				  Su usuario se encuentra en espera de ser habilitado por un administrador. 
 				</div> </div>";
 			}
+			
 		}
 		else 
 		{
@@ -48,7 +51,7 @@
 				<div class='alert alert-error'>
 				  <button type='button' class='close' data-dismiss='alert'>&times;</button>
 				  <h4>Error de autentificacion.</h4>
-				  El usuario ingresado no existe o la contrasena es incorrecta. Por favor asegurese de ingresar los datos correctamente
+				  El usuario ingresado no existe o aun no tiene autorizacion para ingresar al sistema. Por favor asegurese de ingresar los datos correctamente
 				  e intente de nuevo. 
 				</div> </div>";
 		}
@@ -59,6 +62,7 @@
 		$sql = "SELECT * FROM usuario WHERE usuario = '".$user."' and password = '".$pass."'";
 		$rec = mysql_query($sql);
 		$count = 0;
+		$result=null;
 	 
 		while($row = mysql_fetch_object($rec))
 		{
@@ -68,7 +72,7 @@
 	 
 		if($count == 1)
 		{
-			return 1;
+			return 1;		
 		}
 	 
 		else
@@ -81,50 +85,11 @@
 <?php include("/var/www/html/src/componentes/encabezadoIndex.php");?>
 
 <body>
-
-        <?php include_once("analyticstracking.php") ?>
+<?php include_once("analyticstracking.php") ?>
 
 	<?php
         include("/var/www/html/src/componentes/menuPrincipal.php");
     ?>
-
-	<div class="container">
-		<div class="hero-unit">
-			<h1>Catastro Nacional de Asentamientos</h1>
-			<p>El Catastro Nacional de Asentamientos es una investigación que busca describir la realidad de todos los asentamientos en condiciones de pobreza de Costa Rica, mediante la realización de un censo comunitario.</p>
-			<p><a class="btn btn-primary btn-large">Leer mas &raquo;</a></p>
-		</div>
-	</div>
-
-	<div class="container">
-		<div id="myCarousel" class="carousel slide">
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="src/img/slider1.jpg" alt="">
-					<div class="carousel-caption">
-						<h4>Primera Imagen</h4>
-						<p>Texto Descriptivo</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="src/img/slider2.jpg" alt="">
-					<div class="carousel-caption">
-						<h4>Segunda Imagen</h4>
-						<p>Texto Descriptivo</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="src/img/slider3.jpg" alt="">
-					<div class="carousel-caption">
-						<h4>Tercera Imagen</h4>
-						<p>Texto Descriptivo</p>
-					</div>
-				</div>
-			</div>
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-		</div>
-	</div>
 
 	<!--Formulario de logueo para usuarios-->
 	<div class="container">
@@ -155,7 +120,6 @@
 	</div> <!-- /container -->
 
 	<?php include("/var/www/html/src/componentes/estilos.php");?>
-
 </body>
 </html>
 
