@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<?php
+		include("/var/www/catasTECHO/src/cmp/encabezado.php");
 	?>
 	<head>
 	</head>
@@ -8,10 +9,10 @@
 		<div>
 			<ul class="nav nav-tabs">
     			<li class="active">
-    				<a href="#">Home</a>
+    				<a href="#">Consultas</a>
     			</li>
-    			<li><a href="#">...</a></li>
-    			<li><a href="#">...</a></li>
+    			<li><a href="#">Datos</a></li>
+    			<li><a href="#">Usuarios</a></li>
     		</ul>
 		</div>
 		<?php
