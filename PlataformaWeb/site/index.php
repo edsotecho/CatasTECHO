@@ -9,7 +9,7 @@
     		<div class="navbar-inner">
    				<a class="brand" href="index.php">CatasTECHO</a>
     			<ul class="nav">
-    				<li class="active"><a id="linkConsultas" href="#" onClick="muestraDiv(1)">Consultas</a></li>
+    				<li><a id="linkConsultas" href="#" onClick="muestraDiv(1)">Consultas</a></li>
     				<li><a id="linkDatos" href="#" onClick="muestraDiv(2)">Datos</a></li>
     				<li><a id="linkUsuarios" href="#" onClick="muestraDiv(3)">Usuarios</a></li>
     			</ul>
@@ -34,6 +34,7 @@
 		          	<div class="tab-content">
 		            	<!-- Tab Consultas -->
 		            	<div id="tabRespuestas" class="tab-pane active">
+		            		<h3>Consultas</h3>
 		              		<div class="row-fluid">
 		              			<div class="span2">
 			              			Encuesta:
@@ -109,6 +110,7 @@
 		
 		            	<!-- Tab Mapas -->
 		            	<div id="tabMapas" class="tab-pane">
+		            		<h3>Consulta Mapa</h3>
 		              		<p>
 		              			<!-- Aquí va el mapa de consultas y de donde se genera KML -->
 		                		Mapas
@@ -138,6 +140,7 @@
 		          	
 		            	<!-- Tab Actualizar Datos -->
 		            	<div id="tabActualizar" class="tab-pane active">
+		            		<h3>Actualización de Datos</h3>
 		              		<div class="row-fluid">
 		              			<div class="span2">
 			              			Encuesta:
@@ -211,6 +214,7 @@
 		
 		            	<!-- Tab Borrar Datos -->
 		            	<div id="tabBorrar" class="tab-pane">
+		            		<h3>Eliminación de Datos</h3>
 		              		<div class="row-fluid">
 		              			<div class="span2">
 			              			Encuesta:
@@ -303,14 +307,80 @@
 		          	<div class="tab-content">
 		            	<!-- Tab Crear Usuarios -->
 		            	<div id="tabCrearUsuario" class="tab-pane active">
-		              		<p>
-		                		Crear Usuario
-		              		</p>
+		              		<form id="formulario" class="form-horizontal" name="formulario" action="" method="post">
+		              			<fieldset>
+			              			<h3>Creación de un Nuevo Usuario</h3>
+			              			<div class="control-group">           				
+										<label class="control-label" for="input01">Nombre</label>
+										<div class="controls">
+											<input name="nombre" class="input-xlarge" id="input01" type="text">
+										</div>
+										<p></p>
+										<label class="control-label" for="input01">Apellidos</label>
+										<div class="controls">
+											<input name="apellidos" class="input-xlarge" id="input01" type="text">
+										</div>
+										<p></p>
+										<label class="control-label" for="input01">Correo</label>
+										<div class="controls">
+											<input name="correo" class="input-xlarge" id="input01" type="text">
+										</div>
+										<p></p>
+										<label class="control-label" for="input01">Teléfono</label>
+										<div class="controls">
+											<input name="telefono" class="input-xlarge" id="input01" type="text">
+										</div>
+										<p></p>
+										<label class="control-label" for="input01">Nombre Usuario</label>
+										<div class="controls">
+											<input name="nick" class="input-xlarge" id="input01" type="text">
+										</div>
+										<p></p>
+										<label class="control-label" for="input01">Password</label>
+										<div class="controls">
+											<input name="pswd1" class="input-xlarge" id="input01" type="password">
+										</div>
+										<p></p>
+										<label class="control-label" for="input01">Confirmar Password</label>
+										<div class="controls">
+											<input name="pswd2" class="input-xlarge" id="input01" type="password">
+										</div>
+										<p></p>						
+			              			</div>
+			              			<div class="control-group">	
+										<label class="control-label" for="select01">Seleccionar Rol</label>
+										<div class="controls">
+											<select id="selectRolCrearUsuario" name="rol" onchange="cambiaTerritorio()">
+												<option value="0">Seleccione</option>
+												<option value="3">Jefe de Provincia</option>
+												<option value="4">Jefe de Canton</option>
+											</select>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="select01">Provincia/Canton</label>
+										<div class="controls">
+											<select id="territorio" name="territorio">
+												<option value="0">Debe seleccionar el rol primero</option>
+											</select>
+										</div>						
+									</div>
+									<div class="row-fluid form-actions">
+										<div class="span5">
+									    	<button class="btn">Cancelar</button>
+									    </div>
+										<div class="span5">
+											<button class="btn btn-primary" name="crear" type="submit">Guardar</button>
+									    </div> 
+									</div>
+		              			</fieldset>
+		              		</form>
 		            	</div>
 		            	<!--  -->
 		
 		            	<!-- Tab Deshabilitar Usuarios -->
 		            	<div id="tabDeshabilitarUsuario" class="tab-pane">
+		            		<h3>Deshabilitar un Usuario</h3>
 		              		<div class="row-fluid">
 		              			<form action="">
       								<div class="row-fluid">
@@ -327,7 +397,7 @@
 												</select>
 												<br>
 												<div align="center">
-													<button class="btn">Aceptar</button>
+													<button class="btn btn-primary">Aceptar</button>
 												</div>
 											</div>
        	 								</div>

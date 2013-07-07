@@ -1,3 +1,5 @@
+// Función que cambia los div de Consultas, Datos y Usuarios
+
 function muestraDiv(valorCambio)
 {
 	var ConsultasDiv = document.getElementById("divConsultas");
@@ -36,3 +38,27 @@ function muestraDiv(valorCambio)
     } 
 
 }
+
+function cambiaTerritorio()
+{ 
+    //tomo el valor del select del rol elegido 
+    var rol = document.formulario.rol[document.formulario.rol.selectedIndex].value;
+
+    if (rol == 3) 
+    { 
+    	agregarProvincias();
+    }
+    else if(rol == 4)
+    {
+    	agregarCantones();
+    }
+    else
+    { 
+       //si no había provincia seleccionada, elimino las provincias del select 
+       document.formulario.territorio.length = 1 ;
+       //coloco un guión en la única opción que he dejado 
+       document.formulario.territorio.options[0].value = "0";
+       document.formulario.territorio.options[0].text = "Seleccione el Rol";
+    } 
+}
+
