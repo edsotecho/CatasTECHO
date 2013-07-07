@@ -31,17 +31,20 @@
 		            	<li class="active"><a href="#tabRespuestas" data-toggle="tab">Respuestas</a></li>
 		            	<li><a href="#tabMapas" data-toggle="tab">Mapas</a></li>
 		         	</ul>
-		          	<div align="center" class="tab-content">
+		          	<div class="tab-content" align="center">
 		            	<!-- Tab Consultas -->
 		            	<div id="tabRespuestas" class="tab-pane active">
 		              		<div class="row-fluid" align="center">
-		              		    <div class="span3">
+		              			<div class="span2">
 			              			Encuesta:
 			              			<select id="EncuestaConsulta">
 			              				<option>user1</option>
 			              			</select>
-			              		</div>
-			              		<div class="span3">
+			              		</div>	
+				              	<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span2">
 			              			Provincia:
 			              			<select id="ProvinciaConsulta">
 			              				<option>user1</option>
@@ -50,13 +53,18 @@
 		              					<button class="btn">Consultar</button>
 		              				</div>
 			              		</div>
-			              		<div class="span3">
+			              		<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span2">
 			              			Usuario:
 			              			<select id="UsuarioConsulta">
 			              				<option>user1</option>
 			              			</select>
 			              		</div>
-		              			
+			              		<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>		              			
 		              		</div>
 		            	</div>
 		            	<!--  -->
