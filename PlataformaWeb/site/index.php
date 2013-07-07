@@ -34,7 +34,7 @@
 		          	<div class="tab-content">
 		            	<!-- Tab Consultas -->
 		            	<div id="tabConsultas" class="tab-pane active">
-		              		<div class="row-fluid">
+		              		<div class="row-fluid" align="center">
 		              		    <div class="span3">
 			              			Encuesta:
 			              			<select id="EncuestaConsulta">
