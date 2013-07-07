@@ -9,9 +9,9 @@
     		<div class="navbar-inner">
    				<a class="brand" href="#">CatasTECHO</a>
     			<ul class="nav">
-    				<li class="active"><a id="linkConsultas" href="#" onClick="cambiarDiv(1)">Consultas</a></li>
-    				<li><a id="linkDatos" href="#" onClick="cambiarDiv(2)">Datos</a></li>
-    				<li><a id="linkUsuarios" href="#" onClick="cambiarDiv(1)">Usuarios</a></li>
+    				<li class="active"><a id="linkConsultas" href="#" onClick="muestraDiv(1)">Consultas</a></li>
+    				<li><a id="linkDatos" href="#" onClick="muestraDiv(2)">Datos</a></li>
+    				<li><a id="linkUsuarios" href="#" onClick="muestraDiv(3)">Usuarios</a></li>
     			</ul>
     		</div>
     	</div>
