@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script src="../src/js/funcionesVarias.js"></script>
+	
 	<?php
 		include("/var/www/catasTECHO/src/cmp/encabezado.php");
 	?>
@@ -12,6 +12,10 @@
     				<li class="active"><a id="linkConsultas" href="#" onClick="muestraDiv(1)">Consultas</a></li>
     				<li><a id="linkDatos" href="#" onClick="muestraDiv(2)">Datos</a></li>
     				<li><a id="linkUsuarios" href="#" onClick="muestraDiv(3)">Usuarios</a></li>
+    			</ul>
+    			<ul class="nav pull-right">
+    				<li class="divider-vertical"></li>
+    				<li><a href="iniciarSesion.php">Usuario</a></li>
     			</ul>
     		</div>
     	</div>
@@ -112,9 +116,26 @@
 		
 		            	<!-- Tab Mapas -->
 		            	<div id="tabDeshabilitarUsuario" class="tab-pane">
-		              		<p>
-		                		Deshabilitar Usuario
-		              		</p>
+		              		<div class="row-fluid">
+		              			<form action="">
+		              				<div class="span2">
+       	 								<!-- espacio vacío -->
+      								</div>
+      								<div class="span8">
+       	 								<!-- espacio vacío -->
+       	 								Seleccione el usuario a deshabilitar:
+       	 								<select multiple="multiple">
+											<option>user1</option>
+											<option>user2</option>
+											<option>user3</option>
+										</select>
+										<button class="btn">Aceptar</button>
+      								</div>
+      								<div class="span2">
+       	 								<!-- espacio vacío -->
+      								</div>
+		              			</form>
+		              		</div>		              		
 		            	</div>
 		            	<!--  -->
 		          	</div>
