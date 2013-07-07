@@ -47,7 +47,7 @@
 			              				<option>user1</option>
 			              			</select>
 			              			<div>
-		              					<button btn="btn">Consultar</button>
+		              					<button class="btn">Consultar</button>
 		              				</div>
 			              		</div>
 			              		<div class="span3">
@@ -64,7 +64,7 @@
 		            	<!-- Tab Mapas -->
 		            	<div id="tabMapas" class="tab-pane">
 		              		<p>
-		                		Mapas
+		                		
 		              		</p>
 		            	</div>
 		            	<!--  -->
@@ -89,7 +89,7 @@
 		         	</ul>
 		          	<div class="tab-content">
 		          	
-		            	<!-- Tab Consultas -->
+		            	<!-- Tab Actualizar Datos -->
 		            	<div id="tabActualizar" class="tab-pane active">
 		              		<p>
 		                		Actualizar Datos
@@ -98,7 +98,7 @@
 		            	</div>
 		            	<!--  -->
 		
-		            	<!-- Tab Mapas -->
+		            	<!-- Tab Borrar Datos -->
 		            	<div id="tabBorrar" class="tab-pane">
 		              		<p>
 		                		Borrar Datos
@@ -127,7 +127,7 @@
 		            	<li><a href="#tabDeshabilitarUsuario" data-toggle="tab">Deshabilitar Usuario</a></li>
 		         	</ul>
 		          	<div class="tab-content">
-		            	<!-- Tab Consultas -->
+		            	<!-- Tab Crear Usuarios -->
 		            	<div id="tabCrearUsuario" class="tab-pane active">
 		              		<p>
 		                		Crear Usuario
@@ -135,7 +135,7 @@
 		            	</div>
 		            	<!--  -->
 		
-		            	<!-- Tab Mapas -->
+		            	<!-- Tab Deshabilitar Usuarios -->
 		            	<div id="tabDeshabilitarUsuario" class="tab-pane">
 		              		<div class="row-fluid">
 		              			<form action="">
