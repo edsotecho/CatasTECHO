@@ -49,6 +49,8 @@
 			              			<select id="ProvinciaConsulta">
 			              				<option>user1</option>
 			              			</select>
+			              			<br>
+			              			<br>
 			              			<div>
 		              					<button class="btn">Consultar</button>
 		              				</div>
@@ -62,6 +64,36 @@
 			              				<option>user1</option>
 			              			</select>
 			              		</div>		              			              			
+		              		</div>
+		              		<br>
+		              		<br>		              		
+		              		<div>
+		              			<table class="table">
+		              				<tr>
+		              					<th>Provincia</th>
+		              					<th>Usuario</th>
+		              					<th>Latitud</th>
+		              					<th>Longitud</th>
+		              				</tr>
+		              				<tr>
+		              					<td>San José</th>
+		              					<td>wching</th>
+		              					<td>-90.88509</th>
+		              					<td>80.98763</th>
+		              				</tr>
+		              				<tr>
+		              					<td>San José</th>
+		              					<td>wching</th>
+		              					<td>-90.88509</th>
+		              					<td>80.98763</th>
+		              				</tr>
+		              				<tr>
+		              					<td>San José</th>
+		              					<td>wching</th>
+		              					<td>-90.88509</th>
+		              					<td>80.98763</th>
+		              				</tr>
+		              			</table>
 		              		</div>
 		            	</div>
 		            	<!--  -->
@@ -177,11 +209,12 @@
 	</head>
 	<body>
     	
-		<?php
-    		include("/var/www/catasTECHO/src/cmp/estilos.php");
-		?>
+		
 	</body>
 
 <footer>
+	<?php
+    	include("/var/www/catasTECHO/src/cmp/estilos.php");
+	?>
 </footer>
 </html>
