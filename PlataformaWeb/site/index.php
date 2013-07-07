@@ -17,17 +17,109 @@
     	
     	<!-- Div de las Consultas -->
     	<div id="divConsultas" class="row-fluid">
-    		
+    		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>
+      		<div class="span10">
+      			<div class="tabbable">
+		          	<ul class="nav nav-tabs">
+		            	<li class="active"><a href="#tabRespuestas" data-toggle="tab">Respuestas</a></li>
+		            	<li><a href="#tabMapas" data-toggle="tab">Mapas</a></li>
+		         	</ul>
+		          	<div class="tab-content">
+		            	<!-- Tab Consultas -->
+		            	<div id="tabConsultas" class="tab-pane active">
+		              		<p>
+		                		Consultas
+		              		</p>
+		            	</div>
+		            	<!--  -->
+		
+		            	<!-- Tab Mapas -->
+		            	<div id="tabMapas" class="tab-pane">
+		              		<p>
+		                		Eliminar Voluntario
+		              		</p>
+		            	</div>
+		            	<!--  -->
+		          	</div>
+		        </div>
+      		</div>
+      		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>	
     	</div>
     	
     	<!-- Div de los Datos -->
     	<div id="divDatos" class="row-fluid">
-    		
+    		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>
+      		<div class="span10">
+      			<div class="tabbable">
+		          	<ul class="nav nav-tabs">
+		            	<li class="active"><a href="#tabActualizar" data-toggle="tab">Actualizar</a></li>
+		            	<li><a href="#tabBorrar" data-toggle="tab">Borrar</a></li>
+		         	</ul>
+		          	<div class="tab-content">
+		            	<!-- Tab Consultas -->
+		            	<div id="tabActualizar" class="tab-pane active">
+		              		<p>
+		                		Actualizar Datos
+		                		Tabla 
+		              		</p>
+		            	</div>
+		            	<!--  -->
+		
+		            	<!-- Tab Mapas -->
+		            	<div id="tabBorrar" class="tab-pane">
+		              		<p>
+		                		Borrar Datos
+		                		Tabla
+		              		</p>
+		            	</div>
+		            	<!--  -->
+		          	</div>
+		        </div>
+      		</div>
+      		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>	
     	</div>
     	
     	<!-- Div de los Usuarios -->
     	<div id="divUsuarios" class="row-fluid">
-    		
+    		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>
+      		<div class="span10">
+      			<div class="tabbable">
+		          	<ul class="nav nav-tabs">
+		            	<li class="active"><a href="#tabCrearUsuario" data-toggle="tab">Crear Usuario</a></li>
+		            	<li><a href="#tabDeshabilitarUsuario" data-toggle="tab">Deshabilitar Usuario</a></li>
+		         	</ul>
+		          	<div class="tab-content">
+		            	<!-- Tab Consultas -->
+		            	<div id="tabCrearUsuario" class="tab-pane active">
+		              		<p>
+		                		Crear Usuario
+		              		</p>
+		            	</div>
+		            	<!--  -->
+		
+		            	<!-- Tab Mapas -->
+		            	<div id="tabDeshabilitarUsuario" class="tab-pane">
+		              		<p>
+		                		Deshabilitar Usuario
+		              		</p>
+		            	</div>
+		            	<!--  -->
+		          	</div>
+		        </div>
+      		</div>
+      		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>
     	</div>
     	
 	</head>
