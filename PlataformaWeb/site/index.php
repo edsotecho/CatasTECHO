@@ -7,7 +7,7 @@
 	<head>
 		<div class="navbar">
     		<div class="navbar-inner">
-   				<a class="brand" href="#">CatasTECHO</a>
+   				<a class="brand" href="index.php">CatasTECHO</a>
     			<ul class="nav">
     				<li class="active"><a id="linkConsultas" href="#" onClick="muestraDiv(1)">Consultas</a></li>
     				<li><a id="linkDatos" href="#" onClick="muestraDiv(2)">Datos</a></li>
@@ -34,9 +34,30 @@
 		          	<div class="tab-content">
 		            	<!-- Tab Consultas -->
 		            	<div id="tabConsultas" class="tab-pane active">
-		              		<p>
-		                		Consultas
-		              		</p>
+		              		<div class="row-fluid">
+		              		    <div class="span3">
+			              			Encuesta:
+			              			<select id="EncuestaConsulta">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>
+			              		<div class="span3">
+			              			Provincia:
+			              			<select id="ProvinciaConsulta">
+			              				<option>user1</option>
+			              			</select>
+			              			<div>
+		              					<button btn="btn">Consultar</button>
+		              				</div>
+			              		</div>
+			              		<div class="span3">
+			              			Usuario:
+			              			<select id="UsuarioConsulta">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>
+		              			
+		              		</div>
 		            	</div>
 		            	<!--  -->
 		
@@ -122,7 +143,7 @@
       									<div>
 	       	 								<!-- espacio vacío -->
        	 									Seleccione el usuario a deshabilitar:
-       	 									<br/>
+       	 									<br>
        	 									<div>
 		       	 								<select multiple="multiple">
 													<option>user1</option>
