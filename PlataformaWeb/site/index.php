@@ -60,12 +60,14 @@
 			              			</select>
 			              		</div>		              			              			
 		              		</div>
+		              		<br>
+		              		<br>
 		              		<!-- Div donde están los botones de generar consultas y el archivo de excel -->
-		              		<div align="center">
-			              		<div>
+		              		<div class="row-fluid" align="center">
+			              		<div class="span5">
 			              			<button class="btn">Consultar</button>
 			              		</div>
-			              		<div>
+			              		<div class="span5">
 			              			<button class="btn">Generar Excel</button>
 			              		</div>
 			              	</div>	
