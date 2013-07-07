@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	<script type="text/javascript"></script>
 	<?php
 		include("/var/www/catasTECHO/src/cmp/encabezado.php");
 	?>
@@ -38,7 +39,7 @@
 		            	<!-- Tab Mapas -->
 		            	<div id="tabMapas" class="tab-pane">
 		              		<p>
-		                		Eliminar Voluntario
+		                		Mapas
 		              		</p>
 		            	</div>
 		            	<!--  -->
@@ -51,7 +52,7 @@
     	</div>
     	
     	<!-- Div de los Datos -->
-    	<div id="divDatos" class="row-fluid">
+    	<div id="divDatos" class="row-fluid" style="display: none">
     		<div class="span1">
        	 		<!-- espacio vacío -->
       		</div>
@@ -88,7 +89,7 @@
     	</div>
     	
     	<!-- Div de los Usuarios -->
-    	<div id="divUsuarios" class="row-fluid">
+    	<div id="divUsuarios" class="row-fluid" style="display: none">
     		<div class="span1">
        	 		<!-- espacio vacío -->
       		</div>
