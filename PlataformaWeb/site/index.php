@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script type="text/javascript"></script>
+	<script src="../src/js/funcionesVarias.js"></script>
 	<?php
 		include("/var/www/catasTECHO/src/cmp/encabezado.php");
 	?>
@@ -63,6 +63,7 @@
 		            	<li><a href="#tabBorrar" data-toggle="tab">Borrar</a></li>
 		         	</ul>
 		          	<div class="tab-content">
+		          	
 		            	<!-- Tab Consultas -->
 		            	<div id="tabActualizar" class="tab-pane active">
 		              		<p>
@@ -80,6 +81,7 @@
 		              		</p>
 		            	</div>
 		            	<!--  -->
+		            	
 		          	</div>
 		        </div>
       		</div>
