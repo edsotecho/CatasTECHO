@@ -118,21 +118,23 @@
 		            	<div id="tabDeshabilitarUsuario" class="tab-pane">
 		              		<div class="row-fluid">
 		              			<form action="">
-		              				<div class="span2">
-       	 								<!-- espacio vacío -->
-      								</div>
-      								<div class="span8">
-       	 								<!-- espacio vacío -->
-       	 								Seleccione el usuario a deshabilitar:
-       	 								<select multiple="multiple">
-											<option>user1</option>
-											<option>user2</option>
-											<option>user3</option>
-										</select>
-										<button class="btn">Aceptar</button>
-      								</div>
-      								<div class="span2">
-       	 								<!-- espacio vacío -->
+      								<div class="row-fluid">
+      									<div>
+	       	 								<!-- espacio vacío -->
+       	 									Seleccione el usuario a deshabilitar:
+       	 									<br/>
+       	 									<div>
+		       	 								<select multiple="multiple">
+													<option>user1</option>
+													<option>user2</option>
+													<option>user3</option>
+												</select>
+												<div>
+													<button class="btn">Aceptar</button>
+												</div>
+											</div>
+       	 								</div>
+       	 								
       								</div>
 		              			</form>
 		              		</div>		              		
