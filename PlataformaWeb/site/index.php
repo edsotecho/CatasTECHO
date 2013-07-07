@@ -61,10 +61,7 @@
 			              			<select id="UsuarioConsulta">
 			              				<option>user1</option>
 			              			</select>
-			              		</div>
-			              		<div class="span2">
-       	 							<!-- espacio vacío -->
-      							</div>		              			
+			              		</div>		              			              			
 		              		</div>
 		            	</div>
 		            	<!--  -->
@@ -153,7 +150,7 @@
        	 									Seleccione el usuario a deshabilitar:
        	 									<br>
        	 									<div>
-		       	 								<select multiple="multiple">
+		       	 								<select>
 													<option>user1</option>
 													<option>user2</option>
 													<option>user3</option>
