@@ -31,10 +31,10 @@
 		            	<li class="active"><a href="#tabRespuestas" data-toggle="tab">Respuestas</a></li>
 		            	<li><a href="#tabMapas" data-toggle="tab">Mapas</a></li>
 		         	</ul>
-		          	<div class="tab-content" align="center">
+		          	<div class="tab-content">
 		            	<!-- Tab Consultas -->
 		            	<div id="tabRespuestas" class="tab-pane active">
-		              		<div class="row-fluid" align="center">
+		              		<div class="row-fluid">
 		              			<div class="span2">
 			              			Encuesta:
 			              			<select id="EncuestaConsulta">
@@ -48,12 +48,7 @@
 			              			Provincia:
 			              			<select id="ProvinciaConsulta">
 			              				<option>user1</option>
-			              			</select>
-			              			<br>
-			              			<br>
-			              			<div>
-		              					<button class="btn">Consultar</button>
-		              				</div>
+			              			</select>	              			
 			              		</div>
 			              		<div class="span2">
        	 							<!-- espacio vacío -->
@@ -65,9 +60,21 @@
 			              			</select>
 			              		</div>		              			              			
 		              		</div>
+		              		<!-- Div donde están los botones de generar consultas y el archivo de excel -->
+		              		<div align="center">
+			              		<div>
+			              			<button class="btn">Consultar</button>
+			              		</div>
+			              		<div>
+			              			<button class="btn">Generar Excel</button>
+			              		</div>
+			              	</div>	
 		              		<br>
 		              		<br>		              		
 		              		<div>
+		              			<!-- Tabla de Consultas -->
+		              			<!-- Aquí debe ir la tabla dinámica con JQuery -->
+		              			<!-- La actual es un ejemplo para ver el interfaz de la aplicación -->
 		              			<table class="table">
 		              				<tr>
 		              					<th>Provincia</th>
@@ -101,7 +108,8 @@
 		            	<!-- Tab Mapas -->
 		            	<div id="tabMapas" class="tab-pane">
 		              		<p>
-		                		
+		              			<!-- Aquí va el mapa de consultas y de donde se genera KML -->
+		                		Mapas
 		              		</p>
 		            	</div>
 		            	<!--  -->
@@ -128,19 +136,146 @@
 		          	
 		            	<!-- Tab Actualizar Datos -->
 		            	<div id="tabActualizar" class="tab-pane active">
-		              		<p>
-		                		Actualizar Datos
-		                		Tabla 
-		              		</p>
+		              		<div class="row-fluid">
+		              			<div class="span2">
+			              			Encuesta:
+			              			<select id="EncuestaDatosActualizar">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>	
+				              	<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span2">
+			              			Provincia:
+			              			<select id="ProvinciaDatosActualizar">
+			              				<option>user1</option>
+			              			</select>
+			              			<br>
+			              			<div align="center">
+		              					<button class="btn">Consultar</button>
+		              				</div>
+			              		</div>
+			              		<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span2">
+			              			Usuario:
+			              			<select id="UsuarioDatosActualizar">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>	
+		              			
+		              		</div>
+		              		<br>
+		              		<br>
+		              		<!-- Tabla de Datos para Actualizar -->
+		              		<!-- Aquí debe ir la tabla dinámica con JQuery -->
+		              		<!-- La actual es un ejemplo para ver el interfaz de la aplicación -->
+		              		<div id="divTablaDatosActualizar">
+			              			<table class="table">
+			              				<tr>
+			              					<th>Provincia</th>
+			              					<th>Usuario</th>
+			              					<th>Latitud</th>
+			              					<th>Longitud</th>
+			              					<th>Editar</th>
+			              				</tr>
+			              				<tr>
+			              					<td>San José</td>
+			              					<td>wching</td>
+			              					<td>-90.88509</td>
+			              					<td>80.98763</td>
+			              					<td><button>Editar</button></td>
+			              				</tr>
+			              				<tr>
+			              					<td>San José</td>
+			              					<td>wching</td>
+			              					<td>-90.88509</td>
+			              					<td>80.98763</td>
+			              					<td><button>Editar</button></td>
+			              				</tr>
+			              				<tr>
+			              					<td>San José</td>
+			              					<td>wching</td>
+			              					<td>-90.88509</td>
+			              					<td>80.98763</td>
+			              					<td><button>Editar</button></td>
+			              				</tr>
+			              			</table>
+		              			</div>
 		            	</div>
 		            	<!--  -->
 		
 		            	<!-- Tab Borrar Datos -->
 		            	<div id="tabBorrar" class="tab-pane">
-		              		<p>
-		                		Borrar Datos
-		                		Tabla
-		              		</p>
+		              		<div class="row-fluid">
+		              			<div class="span2">
+			              			Encuesta:
+			              			<select id="EncuestaDatosBorrar">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>	
+				              	<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span2">
+			              			Provincia:
+			              			<select id="ProvinciaDatosBorrar">
+			              				<option>user1</option>
+			              			</select>
+			              			<br>
+			              			<div align="center">
+		              					<button class="btn">Consultar</button>
+		              				</div>
+			              		</div>
+			              		<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span2">
+			              			Usuario:
+			              			<select id="UsuarioDatosBorrar">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>	
+		              		</div>
+		              		<br>
+		              		<br>
+		              		<!-- Tabla de Datos para Eliminar -->
+		              		<!-- Aquí debe ir la tabla dinámica con JQuery -->
+		              		<!-- La actual es un ejemplo para ver el interfaz de la aplicación -->
+	              			<div id="divTablarDatosBorrar" align="center">
+		              			<table class="table">
+		              				<tr>
+		              					<th>Provincia</th>
+		              					<th>Usuario</th>
+		              					<th>Latitud</th>
+		              					<th>Longitud</th>
+		              					<th>Borrar</th>
+		              				</tr>
+		              				<tr>
+		              					<td>San José</td>
+		              					<td>wching</td>
+		              					<td>-90.88509</td>
+		              					<td>80.98763</td>
+		              					<td><button>x</button></td>
+		              				</tr>
+		              				<tr>
+		              					<td>San José</td>
+		              					<td>wching</td>
+		              					<td>-90.88509</td>
+		              					<td>80.98763</td>
+		              					<td><button>x</button></td>
+		              				</tr>
+		              				<tr>
+		              					<td>San José</td>
+		              					<td>wching</td>
+		              					<td>-90.88509</td>
+		              					<td>80.98763</td>
+		              					<td><button>x</button></td>
+		              				</tr>
+		              			</table>
+	              			</div>
 		            	</div>
 		            	<!--  -->
 		            	
@@ -181,13 +316,15 @@
 	       	 								<!-- espacio vacío -->
        	 									Seleccione el usuario a deshabilitar:
        	 									<br>
-       	 									<div>
+       	 									<br>
+       	 									<div align="center">
 		       	 								<select>
 													<option>user1</option>
 													<option>user2</option>
 													<option>user3</option>
 												</select>
-												<div>
+												<br>
+												<div align="center">
 													<button class="btn">Aceptar</button>
 												</div>
 											</div>
