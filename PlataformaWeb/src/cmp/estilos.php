@@ -20,3 +20,9 @@
         <script src="../src/js/bootstrap-collapse.js"></script>
         <script src="../src/js/bootstrap-carousel.js"></script>
         <script src="../src/js/bootstrap-typeahead.js"></script>
+        <!-- Funciones extras  -->
+        <script src="../src/js/funcionesVarias.js" type="text/javascript"></script>
+<!--
+
+//-->
+
