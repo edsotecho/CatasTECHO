@@ -10,14 +10,12 @@ function muestraDiv(valorCambio)
     if (valorCambio == 1) // Pone el div de Consultas visible
     {
       DatosDiv.style.display = "none";
-      ReportesDiv.style.display = "none";
       UsuariosDiv.style.display = "none";
       ConsultasDiv.style.display = "block";
       ConsultasLink.class = "active";
     }
     if (valorCambio == 2) // Pone el div de Datos visible
     {
-      ReportesDiv.style.display = "none";
       UsuariosDiv.style.display = "none";
       ConsultasDiv.style.display = "none"; 
       DatosDiv.style.display = "block";
@@ -26,7 +24,6 @@ function muestraDiv(valorCambio)
     if (valorCambio == 3) // Pone el div de Usuarios visible
     {
       ZonasDiv.style.display = "none";
-      ReportesDiv.style.display = "none";
       ConsultasDiv.style.display = "none";
       UsuariosDiv.style.display = "block";
       UsuariosLink.class = "active";
