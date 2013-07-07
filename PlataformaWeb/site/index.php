@@ -31,9 +31,9 @@
 		            	<li class="active"><a href="#tabRespuestas" data-toggle="tab">Respuestas</a></li>
 		            	<li><a href="#tabMapas" data-toggle="tab">Mapas</a></li>
 		         	</ul>
-		          	<div class="tab-content">
+		          	<div align="center" class="tab-content">
 		            	<!-- Tab Consultas -->
-		            	<div id="tabConsultas" class="tab-pane active">
+		            	<div id="tabRespuestas" class="tab-pane active">
 		              		<div class="row-fluid" align="center">
 		              		    <div class="span3">
 			              			Encuesta:
