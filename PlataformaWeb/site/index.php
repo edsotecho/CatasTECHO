@@ -417,6 +417,19 @@
       		</div>
     	</div>
     	
+    	<!-- Div Información Personal por Usuario -->
+    	<div id="divInfoPersonal" class="row-fluid" style="display: none">
+    		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>
+      		<div class="span10">
+       	 		
+      		</div>
+      		<div class="span1">
+       	 		<!-- espacio vacío -->
+      		</div>
+    	</div>
+    	
 	</head>
 	<body>
     	
