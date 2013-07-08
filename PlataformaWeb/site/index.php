@@ -9,13 +9,15 @@
     		<div class="navbar-inner">
    				<a class="brand" href="index.php">CatasTECHO</a>
     			<ul class="nav">
-    				<li><a id="linkConsultas" href="#" onClick="muestraDiv(1)">Consultas</a></li>
-    				<li><a id="linkDatos" href="#" onClick="muestraDiv(2)">Datos</a></li>
-    				<li><a id="linkUsuarios" href="#" onClick="muestraDiv(3)">Usuarios</a></li>
+    				<li id="linkConsultas" class="active"><a onClick="muestraDiv(1)">Consultas</a></li>
+    				<li id="linkDatos"><a onClick="muestraDiv(2)">Datos</a></li>
+    				<li id="linkUsuarios"><a onClick="muestraDiv(3)">Usuarios</a></li>
     			</ul>
     			<ul class="nav pull-right">
     				<li class="divider-vertical"></li>
-    				<li><a href="iniciarSesion.php">Usuario</a></li>
+    				
+    				<!-- referenciar a la página de los datos personales de cada usuario -->
+    				<li><a href="#">Usuario</a></li>
     			</ul>
     		</div>
     	</div>

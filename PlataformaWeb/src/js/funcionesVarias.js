@@ -14,27 +14,27 @@ function muestraDiv(valorCambio)
       DatosDiv.style.display = "none";
       UsuariosDiv.style.display = "none";
       ConsultasDiv.style.display = "block";
-      DatosLink.class = "none";
-      UsuariosLink.class = "none";
-      ConsultasLink.class = "active";
+      DatosLink.setAttribute("class", "");
+      UsuariosLink.setAttribute("class", "");
+      ConsultasLink.setAttribute("class", "active");
     }
     if (valorCambio == 2) // Pone el div de Datos visible
     {
       UsuariosDiv.style.display = "none";
       ConsultasDiv.style.display = "none"; 
       DatosDiv.style.display = "block";
-      UsuariosLink.class = "none";
-      ConsultasLink.class = "none";
-      DatosLink.class = "active";
+      UsuariosLink.setAttribute("class", "");
+      ConsultasLink.setAttribute("class", "");
+      DatosLink.setAttribute("class", "active");
     }
     if (valorCambio == 3) // Pone el div de Usuarios visible
     {
       DatosDiv.style.display = "none";
       ConsultasDiv.style.display = "none";
       UsuariosDiv.style.display = "block";
-      ConsultasLink.class = "none";
-      DatosLink.class = "none";
-      UsuariosLink.class = "active";
+      DatosLink.setAttribute("class", "");
+      ConsultasLink.setAttribute("class", "");
+      UsuariosLink.setAttribute("class", "active");
     } 
 
 }
