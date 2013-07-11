@@ -72,7 +72,7 @@
 			              			<button class="btn">Consultar</button>
 			              		</div>
 			              		<div class="span5">
-			              			<button class="btn">Generar Excel</button>
+			              			<button class="btn"><img src="../src/img/excel_logo.png"/></button>
 			              		</div>
 			              	</div>	
 		              		<br>
