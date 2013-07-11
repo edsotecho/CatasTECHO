@@ -21,7 +21,8 @@
     			</ul>
     		</div>
     	</div>
-    	
+    </head>
+    <body>
     	<!-- Div de las Consultas -->
     	<div id="divConsultas" class="row-fluid">
     		<div class="span1">
@@ -429,9 +430,6 @@
        	 		<!-- espacio vacío -->
       		</div>
     	</div>
-    	
-	</head>
-	<body>
     	
 		
 	</body>
