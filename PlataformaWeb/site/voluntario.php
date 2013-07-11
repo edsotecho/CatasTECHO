@@ -44,23 +44,14 @@
 			              				<option>user1</option>
 			              			</select>
 			              		</div>	
-				              	<div class="span1">
-       	 							<!-- espacio vacío -->
-      							</div>
-			              		<div class="span3">
-       	 							Usuario:
-			              			<select id="UsuarioConsulta">
-			              				<option>user1</option>
-			              			</select>
-      							</div>
-      							<div class="span1">
+				              	<div class="span2">
        	 							<!-- espacio vacío -->
       							</div>
 			              		<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span3">
 			              			<button class="btn btn-primary">Consultar</button>
-			              			<br>
-		              				<br>
-			              			<button class="btn">Generar Excel</button>
 			              		</div>		              			              			
 		              		</div>
 		              		<br>
@@ -139,19 +130,13 @@
 			              				<option>user1</option>
 			              			</select>
 			              		</div>	
-				              	<div class="span1">
-       	 							<!-- espacio vacío -->
-      							</div>
-			              		<div class="span3">
-			              			Usuario:
-			              			<select id="UsuarioDatosActualizar">
-			              				<option>user1</option>
-			              			</select>
-			              		</div>
-			              		<div class="span1">
+				              	<div class="span2">
        	 							<!-- espacio vacío -->
       							</div>
 			              		<div class="span2">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span3">
 			              			<br>
 			              			<div align="center">
 		              					<button class="btn btn-primary">Consultar</button>
@@ -203,7 +188,7 @@
 		            	<div id="tabBorrar" class="tab-pane">
 		            		<h3>Eliminación de Datos</h3>
 		              		<div class="row-fluid">
-		              			<div class="span2">
+		              			<div class="span3">
 			              			Encuesta:
 			              			<select id="EncuestaDatosBorrar">
 			              				<option>user1</option>
@@ -212,16 +197,10 @@
 				              	<div class="span2">
        	 							<!-- espacio vacío -->
       							</div>
-			              		<div class="span2">			              			
-			              			Usuario:
-			              			<select id="UsuarioDatosBorrar">
-			              				<option>user1</option>
-			              			</select>
-			              		</div>
 			              		<div class="span2">
        	 							<!-- espacio vacío -->
       							</div>
-			              		<div class="span2">
+			              		<div class="span3">
 			              			<br>
 			              			<div align="center">
 		              					<button class="btn btn-primary">Consultar</button>
