@@ -11,24 +11,29 @@
 			<div class="span2">
 			</div>
 			<div align="center" class="span8">
-				<img src="/src/img/banner.jpg"/>
+				<img width="1300" height="500" src="../src/img/banner.jpg"/>
 			</div>
 			<div class="span2">
 			</div>
 		</div>
-		<h2 class="form-signin-heading"> Inicio de Sesión </h2>
-		<div class="row-fluid">
-			<form class="form-signin">
-				<div>
-					<input type="text" placeholder="Email address"></input>
-				</div>
-				<div>
-					<input type="password" placeholder="Password"></input>
-				</div>
-				<div>
-				<button class="btn btn-primary" type="submit">Sign in</button>
-				
-			</form>
+		<div class="row-fluid" align="center">
+			<div class="row-fluid">
+				<h2 class="form-signin-heading"> Inicio de Sesión </h2>
+				<br>
+				<form class="form-signin">
+					<div>
+						<input type="text" placeholder="Usuario"></input>
+					</div>
+					<br>
+					<div>
+						<input type="password" placeholder="Contraseña"></input>
+					</div>
+					<br>
+					<div>
+					<button class="btn btn-primary" type="submit">Iniciar Sesión</button>
+					
+				</form>
+			</div>
 		</div>
 	</body>
 	<?php

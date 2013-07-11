@@ -69,10 +69,10 @@
 		              		<!-- Div donde están los botones de generar consultas y el archivo de excel -->
 		              		<div class="row-fluid" align="center">
 			              		<div class="span5">
-			              			<button class="btn">Consultar</button>
+			              			<button class="btn btn-primary">Consultar</button>
 			              		</div>
 			              		<div class="span5">
-			              			<button class="btn"><img src="../src/img/excel_logo.png" style="height:50px; width:50px"/></button>
+			              			<button class="btn"><img src="../src/img/excel_logo.png" style="height:40px; width:40px"/></button>
 			              		</div>
 			              	</div>	
 		              		<br>
