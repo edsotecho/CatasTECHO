@@ -11,14 +11,14 @@
 			<div class="span2">
 			</div>
 			<div class="span8">
-				<img src="/src/img/banner.jpg">
+				<img src="/src/img/banner.jpg"/>
 			</div>
 			<div class="span2">
 			</div>
 		</div>
 		<div class="container">
 			<form class="form-signin">
-				<h2 class="form-signin-heading"> … </h2>
+				<h2 class="form-signin-heading"> Inicio de Sesión </h2>
 				<input class="input-block-level" type="text" placeholder="Email address"></input>
 				<input class="input-block-level" type="password" placeholder="Password"></input>
 				<button class="btn btn-large btn-primary" type="submit">Sign in</button>
