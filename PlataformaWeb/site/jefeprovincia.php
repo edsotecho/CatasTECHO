@@ -7,7 +7,7 @@
 	<head>
 		<div class="navbar">
     		<div class="navbar-inner">
-   				<a class="brand" href="index.php">CatasTECHO</a>
+   				<a class="brand" href="jefeprovincia.php">CatasTECHO</a>
     			<ul class="nav">
     				<li id="linkConsultas" class="active"><a onClick="muestraDivJF(1)">Consultas</a></li>
     				<li id="linkDatos"><a onClick="muestraDivJF(2)">Datos</a></li>
@@ -20,6 +20,8 @@
     			</ul>
     		</div>
     	</div>
+    </head>
+    <body>
     	<!-- Div de las Consultas -->
     	<div id="divConsultas" class="row-fluid">
     		<div class="span1">
@@ -211,19 +213,19 @@
        	 							<!-- espacio vacío -->
       							</div>
 			              		<div class="span2">			              			
-			              			<br>
-			              			<div align="center">
-		              					<button class="btn">Consultar</button>
-		              				</div>
+			              			Usuario:
+			              			<select id="UsuarioDatosBorrar">
+			              				<option>user1</option>
+			              			</select>
 			              		</div>
 			              		<div class="span2">
        	 							<!-- espacio vacío -->
       							</div>
 			              		<div class="span2">
-			              			Usuario:
-			              			<select id="UsuarioDatosBorrar">
-			              				<option>user1</option>
-			              			</select>
+			              			<br>
+			              			<div align="center">
+		              					<button class="btn btn-primary">Consultar</button>
+		              				</div>
 			              		</div>	
 		              		</div>
 		              		<br>
@@ -286,12 +288,8 @@
       		</div>
     	</div>
     	
-	</head>
-	<body>
-    	
 		
 	</body>
-
 <footer>
 	<?php
     	include("/var/www/catasTECHO/src/cmp/estilos.php");
