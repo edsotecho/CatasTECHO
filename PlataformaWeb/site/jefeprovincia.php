@@ -55,7 +55,7 @@
        	 							<!-- espacio vacío -->
       							</div>
 			              		<div class="span2">
-			              			<button class="btn">Consultar</button>
+			              			<button class="btn btn-primary">Consultar</button>
 			              			<br>
 		              				<br>
 			              			<button class="btn">Generar Excel</button>
