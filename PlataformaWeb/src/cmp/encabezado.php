@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>Catastro | Techo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="El Catastro Nacional de Asentamientos es una investigacion realizada por la Fundacion Techo Costa Rica, que tiene como objetivo recolectar informacion sobre los asentamientos de Costa Rica y que sirva como herramienta para el mejoramiento de las politicas publicas del pais. ">
-	<meta name="author" content="Fundacion Techo Costa Rica">
+	<meta name="description" content="El Catastro Nacional de Asentamientos es una investigacion realizada por la Organización Techo Costa Rica, que tiene como objetivo recolectar informacion sobre los asentamientos de Costa Rica y que sirva como herramienta para el mejoramiento de las politicas publicas del pais. ">
+	<meta name="author" content="Organización Techo Costa Rica">
 	<meta name="keywords" content="asentamiento pobreza costa rica investigacion catastro 2013 utpmp techo ong informacion precario rancho desalojo canton distrito provincia">
 	
 

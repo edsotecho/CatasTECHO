@@ -16,12 +16,18 @@
 			<div class="span2">
 			</div>
 		</div>
-		<div class="container">
+		<h2 class="form-signin-heading"> Inicio de Sesión </h2>
+		<div class="row-fluid">
 			<form class="form-signin">
-				<h2 class="form-signin-heading"> Inicio de Sesión </h2>
-				<input class="input-block-level" type="text" placeholder="Email address"></input>
-				<input class="input-block-level" type="password" placeholder="Password"></input>
-				<button class="btn btn-large btn-primary" type="submit">Sign in</button>
+				<div>
+					<input type="text" placeholder="Email address"></input>
+				</div>
+				<div>
+					<input type="password" placeholder="Password"></input>
+				</div>
+				<div>
+				<button class="btn btn-primary" type="submit">Sign in</button>
+				
 			</form>
 		</div>
 	</body>
