@@ -39,6 +39,30 @@ function muestraDiv(valorCambio)
 
 }
 
+function muestraDivJF(valorCambio)
+{
+	var ConsultasDiv = document.getElementById("divConsultas");
+    var DatosDiv = document.getElementById("divDatos");
+    var ConsultasLink = document.getElementById("linkConsultas");
+    var DatosLink = document.getElementById("linkDatos");
+    
+    if (valorCambio == 1) // Pone el div de Consultas visible
+    {
+      DatosDiv.style.display = "none";
+      ConsultasDiv.style.display = "block";
+      DatosLink.setAttribute("class", "");
+      ConsultasLink.setAttribute("class", "active");
+    }
+    if (valorCambio == 2) // Pone el div de Datos visible
+    {
+      ConsultasDiv.style.display = "none"; 
+      DatosDiv.style.display = "block";
+      ConsultasLink.setAttribute("class", "");
+      DatosLink.setAttribute("class", "active");
+    }
+}
+
+
 function cambiaTerritorio()
 { 
     //tomo el valor del select del rol elegido 

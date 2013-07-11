@@ -9,8 +9,8 @@
     		<div class="navbar-inner">
    				<a class="brand" href="index.php">CatasTECHO</a>
     			<ul class="nav">
-    				<li id="linkConsultas" class="active"><a onClick="muestraDiv(1)">Consultas</a></li>
-    				<li id="linkDatos"><a onClick="muestraDiv(2)">Datos</a></li>
+    				<li id="linkConsultas" class="active"><a onClick="muestraDivJF(1)">Consultas</a></li>
+    				<li id="linkDatos"><a onClick="muestraDivJF(2)">Datos</a></li>
     			</ul>
     			<ul class="nav pull-right">
     				<li class="divider-vertical"></li>
@@ -56,6 +56,8 @@
       							</div>
 			              		<div class="span2">
 			              			<button class="btn">Consultar</button>
+			              			<br>
+		              				<br>
 			              			<button class="btn">Generar Excel</button>
 			              		</div>		              			              			
 		              		</div>
@@ -129,29 +131,29 @@
 		            	<div id="tabActualizar" class="tab-pane active">
 		            		<h3>Actualización de Datos</h3>
 		              		<div class="row-fluid">
-		              			<div class="span2">
+		              			<div class="span3">
 			              			Encuesta:
 			              			<select id="EncuestaDatosActualizar">
 			              				<option>user1</option>
 			              			</select>
 			              		</div>	
-				              	<div class="span2">
+				              	<div class="span1">
+       	 							<!-- espacio vacío -->
+      							</div>
+			              		<div class="span3">
+			              			Usuario:
+			              			<select id="UsuarioDatosActualizar">
+			              				<option>user1</option>
+			              			</select>
+			              		</div>
+			              		<div class="span1">
        	 							<!-- espacio vacío -->
       							</div>
 			              		<div class="span2">
 			              			<br>
 			              			<div align="center">
-		              					<button class="btn">Consultar</button>
+		              					<button class="btn btn-primary">Consultar</button>
 		              				</div>
-			              		</div>
-			              		<div class="span2">
-       	 							<!-- espacio vacío -->
-      							</div>
-			              		<div class="span2">
-			              			Usuario:
-			              			<select id="UsuarioDatosActualizar">
-			              				<option>user1</option>
-			              			</select>
 			              		</div>	
 		              			
 		              		</div>
