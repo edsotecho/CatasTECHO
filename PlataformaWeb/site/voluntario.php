@@ -50,7 +50,8 @@
 			              		<div class="span2">
        	 							<!-- espacio vacío -->
       							</div>
-			              		<div class="span3">
+      							<div class="span3">
+	      							<br>
 			              			<button class="btn btn-primary">Consultar</button>
 			              		</div>		              			              			
 		              		</div>
