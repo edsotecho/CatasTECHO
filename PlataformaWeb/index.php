@@ -10,7 +10,7 @@
 		<div class="row-fluid">
 			<div class="span2">
 			</div>
-			<div class="span8">
+			<div align="center" class="span8">
 				<img src="/src/img/banner.jpg"/>
 			</div>
 			<div class="span2">
@@ -25,9 +25,9 @@
 			</form>
 		</div>
 	</body>
-	<footer>
 	<?php
     	include("/var/www/catasTECHO/src/cmp/estilos.php");
 	?>
+	<footer>
 	</footer>
 </html>
