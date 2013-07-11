@@ -161,7 +161,7 @@
 			              			</select>
 			              			<br>
 			              			<div align="center">
-		              					<button class="btn">Consultar</button>
+		              					<button class="btn btn-primary">Consultar</button>
 		              				</div>
 			              		</div>
 			              		<div class="span2">
@@ -235,7 +235,7 @@
 			              			</select>
 			              			<br>
 			              			<div align="center">
-		              					<button class="btn">Consultar</button>
+		              					<button class="btn btn-primary">Consultar</button>
 		              				</div>
 			              		</div>
 			              		<div class="span2">
@@ -384,30 +384,27 @@
 		            	<!-- Tab Deshabilitar Usuarios -->
 		            	<div id="tabDeshabilitarUsuario" class="tab-pane">
 		            		<h3>Deshabilitar un Usuario</h3>
-		              		<div class="row-fluid">
-		              			<form action="">
-      								<div class="row-fluid">
-      									<div>
-	       	 								<!-- espacio vacío -->
-       	 									Seleccione el usuario a deshabilitar:
-       	 									<br>
-       	 									<br>
-       	 									<div align="center">
-		       	 								<select>
-													<option>user1</option>
-													<option>user2</option>
-													<option>user3</option>
-												</select>
-												<br>
-												<div align="center">
-													<button class="btn btn-primary">Aceptar</button>
-												</div>
-											</div>
-       	 								</div>
-       	 								
-      								</div>
-		              			</form>
-		              		</div>		              		
+		              		<form action="">
+		              			<div class="row-fluid">
+		              				<div class="row-fluid">
+      									<!-- espacio vacío -->
+       	 								Seleccione el usuario a deshabilitar:
+       	 								<br>
+       	 								<br>
+       	 								<div class="span4">
+		       	 							<select>
+												<option>user1</option>
+												<option>user2</option>
+												<option>user3</option>
+											</select>
+										</div>
+										<div class="span4">
+											<button class="btn btn-primary">Aceptar</button>
+										</div>											 								
+      								</div>  
+		              			</div>
+		              			
+							</form> 		              		
 		            	</div>
 		            	<!--  -->
 		          	</div>
