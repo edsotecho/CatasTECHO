@@ -62,7 +62,7 @@ function muestraDivJF(valorCambio)
     }
 }
 
-muestraDivVol()
+function muestraDivVol(valorCambio)
 {
 	var ConsultasDiv = document.getElementById("divConsultas");
     var DatosDiv = document.getElementById("divDatos");
