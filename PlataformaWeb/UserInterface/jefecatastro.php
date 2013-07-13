@@ -7,7 +7,7 @@
 	<head>
 		<div class="navbar">
     		<div class="navbar-inner">
-   				<a class="brand" href="index.php">CatasTECHO</a>
+   				<a class="brand" href="jefecatastro.php">CatasTECHO</a>
     			<ul class="nav">
     				<li id="linkConsultas" class="active"><a onClick="muestraDiv(1)">Consultas</a></li>
     				<li id="linkDatos"><a onClick="muestraDiv(2)">Datos</a></li>
@@ -314,14 +314,9 @@
 		              			<fieldset>
 			              			<h3>Creación de un Nuevo Usuario</h3>
 			              			<div class="control-group">           				
-										<label class="control-label" for="input01">Nombre</label>
+										<label class="control-label" for="input01">Nombre Usuario</label>
 										<div class="controls">
-											<input name="nombre" class="input-xlarge" id="input01" type="text">
-										</div>
-										<p></p>
-										<label class="control-label" for="input01">Apellidos</label>
-										<div class="controls">
-											<input name="apellidos" class="input-xlarge" id="input01" type="text">
+											<input name="nick" class="input-xlarge" id="input01" type="text">
 										</div>
 										<p></p>
 										<label class="control-label" for="input01">Correo</label>
@@ -329,22 +324,12 @@
 											<input name="correo" class="input-xlarge" id="input01" type="text">
 										</div>
 										<p></p>
-										<label class="control-label" for="input01">Teléfono</label>
-										<div class="controls">
-											<input name="telefono" class="input-xlarge" id="input01" type="text">
-										</div>
-										<p></p>
-										<label class="control-label" for="input01">Nombre Usuario</label>
-										<div class="controls">
-											<input name="nick" class="input-xlarge" id="input01" type="text">
-										</div>
-										<p></p>
-										<label class="control-label" for="input01">Password</label>
+										<label class="control-label" for="input01">Contraseña</label>
 										<div class="controls">
 											<input name="pswd1" class="input-xlarge" id="input01" type="password">
 										</div>
 										<p></p>
-										<label class="control-label" for="input01">Confirmar Password</label>
+										<label class="control-label" for="input01">Confirmar Contraseña</label>
 										<div class="controls">
 											<input name="pswd2" class="input-xlarge" id="input01" type="password">
 										</div>
