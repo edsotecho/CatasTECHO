@@ -255,8 +255,10 @@
        	 		<!-- espacio vacío -->
       		</div>	
     	</div>
-    	    	<!-- Div Información Personal por Usuario -->
+    	
+    	<!-- Div Información Personal por Usuario -->
     	<div id="divInfoPersonal" class="row-fluid" style="display: none">
+    		<h3>Mi Cuenta</h3>
     		<div class="span1">
        	 		<!-- espacio vacío -->
       		</div>
