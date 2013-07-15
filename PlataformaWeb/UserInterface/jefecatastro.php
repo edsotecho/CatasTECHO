@@ -339,7 +339,7 @@
 										<label class="control-label" for="select01">Seleccionar Rol</label>
 										<div class="controls">
 											<select id="selectRolCrearUsuarios" name="rol" onchange="muestraConfiguracionRoles()">
-												<option selected="selected" value="0">(Seleccione)</option>
+												<option value="0" selected>(Seleccione)</option>
 												<option value="1">Jefe de Catastro</option>
 												<option value="3">Jefe de Provincia</option>
 												<option value="4">Jefe de Cantón</option>
@@ -350,7 +350,7 @@
 										<label class="control-label" for="select01">Provincia</label>
 										<div class="controls">
 											<select id="selectProvinciaUsuarios" onchange="cambiaCantones()" name="provincia">
-												<option selected="selected" value="0">(Seleccione)</option>
+												<option value="0" selected>(Seleccione)</option>
 												<option value="1">San José</option>
 												<option value="2">Alajuela</option>
 												<option value="3">Cartago</option>
@@ -365,17 +365,23 @@
 										<label class="control-label" for="select01">Cantón</label>
 										<div class="controls">
 											<select id="selectCantonUsuarios" name="territorio">
-												<option selected="selected" value="0">(Seleccione)</option>
+												<option value="0" selected>(Seleccione)</option>
 											</select>
 										</div>						
 									</div>
-									<div class="row-fluid form-actions">
-										<div class="span5">
+									<div class="row-fluid">
+										<div class="span1">
+       	 									<!-- espacio vacío -->
+      									</div>
+										<div class="span2">
 									    	<button class="btn">Cancelar</button>
 									    </div>
-										<div class="span5">
+										<div class="span2">
 											<button class="btn btn-primary" name="crear" type="submit">Guardar</button>
-									    </div> 
+									    </div>
+									    <div class="span5">
+       	 									<!-- espacio vacío -->
+      									</div> 
 									</div>
 		              			</fieldset>
 		              		</form>

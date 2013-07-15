@@ -141,16 +141,10 @@ function muestraDiv(valorCambio)
 		var selectCrearUsuario = document.getElementById("selectRolCrearUsuarios");
 		var selectProvincia = document.getElementById("divProvinciaUsuarios");
 		var selectCanton = document.getElementById("divCantonUsuarios");
-		if (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "(Seleccione)")
+		if ((selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "(Seleccione)") || (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "Jefe de Catastro"))
 		{
 			selectProvincia.style.display = "none";
 			selectCanton.style.display = "none";
-		}
-		if (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "Jefe de Catastro")
-		{
-			selectProvincia.style.display = "none";
-			selectCanton.style.display = "none";
-
 		}
 		else if (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "Jefe de Provincia")
 		{
@@ -176,112 +170,119 @@ function muestraDiv(valorCambio)
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "San José")
 		{
-			selectCanton.clear();
-			selectCanton.add("San José");
-			selectCanton.add("Escazú");
-			selectCanton.add("Desamparados");
-			selectCanton.add("Puriscal");
-			selectCanton.add("Tarrazú");
-			selectCanton.add("Aserrí");
-			selectCanton.add("Mora");
-			selectCanton.add("Goicoechea");
-			selectCanton.add("Santa Ana");
-			selectCanton.add("Alajuelita");
-			selectCanton.add("Vásquez de Coronado");
-			selectCanton.add("Acosta");
-			selectCanton.add("Tibás");
-			selectCanton.add("Moravia");
-			selectCanton.add("Montes de Oca");
-			selectCanton.add("Turrubares");
-			selectCanton.add("Dota");
-			selectCanton.add("Curridabat");
-			selectCanton.add("Pérez Zeledón");
-			selectCanton.add("León Cortés");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('San José', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('Escazú', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('Desamparados', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('Puriscal', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('Tarrazú', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('Aserrí', '6');
+			selectCanton.options[selectCanton.options.length]= new Option('Mora', '7');
+			selectCanton.options[selectCanton.options.length]= new Option('Goicoechea', '8');
+			selectCanton.options[selectCanton.options.length]= new Option('Santa Ana', '9');
+			selectCanton.options[selectCanton.options.length]= new Option('Alajuelita', '10');
+			selectCanton.options[selectCanton.options.length]= new Option('Vásquez de Coronado', '11');
+			selectCanton.options[selectCanton.options.length]= new Option('Acosta', '12');
+			selectCanton.options[selectCanton.options.length]= new Option('Tibás', '13');
+			selectCanton.options[selectCanton.options.length]= new Option('Moravia', '14');
+			selectCanton.options[selectCanton.options.length]= new Option('Montes de Oca', '15');
+			selectCanton.options[selectCanton.options.length]= new Option('Turrubares', '16');
+			selectCanton.options[selectCanton.options.length]= new Option('Dota', '17');
+			selectCanton.options[selectCanton.options.length]= new Option('Curridabat', '18');
+			selectCanton.options[selectCanton.options.length]= new Option('Pérez Zeledón', '19');
+			selectCanton.options[selectCanton.options.length]= new Option('León Cortés', '20');
 			
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Alajuela")
 		{
-			selectCanton.clear();
-			selectCanton.add("Alajuela");
-			selectCanton.add("San Ramón");
-			selectCanton.add("Grecia");
-			selectCanton.add("San Mateo");
-			selectCanton.add("Atenas");
-			selectCanton.add("Naranjo");
-			selectCanton.add("Palmares");
-			selectCanton.add("Poas");
-			selectCanton.add("Orotina");
-			selectCanton.add("San Carlos");
-			selectCanton.add("Zarcero");
-			selectCanton.add("Valverde Vega");
-			selectCanton.add("Upala");
-			selectCanton.add("Los Chiles");
-			selectCanton.add("Guatuso");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('Alajuela', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('San Ramón', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('Grecia', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('San Mateo', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('Atenas', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('Naranjo', '6');
+			selectCanton.options[selectCanton.options.length]= new Option('Palmares', '7');
+			selectCanton.options[selectCanton.options.length]= new Option('Poas', '8');
+			selectCanton.options[selectCanton.options.length]= new Option('Orotina', '9');
+			selectCanton.options[selectCanton.options.length]= new Option('San Carlos', '10');
+			selectCanton.options[selectCanton.options.length]= new Option('Zarcero', '11');
+			selectCanton.options[selectCanton.options.length]= new Option('Valverde Vega', '12');
+			selectCanton.options[selectCanton.options.length]= new Option('Upala', '13');
+			selectCanton.options[selectCanton.options.length]= new Option('Los Chiles', '14');
+			selectCanton.options[selectCanton.options.length]= new Option('Guatuso', '15');
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Limón")
 		{
-			selectCanton.clear();
-			selectCanton.add("Limón");
-			selectCanton.add("Pococí");
-			selectCanton.add("Siquirres");
-			selectCanton.add("Talamanca");
-			selectCanton.add("Matina");
-			selectCanton.add("Guácimo");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('Limón', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('Pococí', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('Siquirres', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('Talamanca', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('Matina', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('Guácimo', '6');
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Heredia")
 		{
-			selectCanton.clear();
-			selectCanton.add("Heredia");
-			selectCanton.add("Barva");
-			selectCanton.add("Santo Domingo");
-			selectCanton.add("Santa Bárbara");
-			selectCanton.add("San Rafael");
-			selectCanton.add("San Isidro");
-			selectCanton.add("Belén");
-			selectCanton.add("Flores");
-			selectCanton.add("San Pablo");
-			selectCanton.add("Sarapiquí");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('Heredia', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('Barva', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('Santo Domingo', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('Santa Bárbara', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('San Rafael', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('San Isidro', '6');
+			selectCanton.options[selectCanton.options.length]= new Option('Belén', '7');
+			selectCanton.options[selectCanton.options.length]= new Option('Flores', '8');
+			selectCanton.options[selectCanton.options.length]= new Option('San Pablo', '9');
+			selectCanton.options[selectCanton.options.length]= new Option('Sarapiquí', '10');
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Puntarenas")
 		{
-			selectCanton.clear();
-			selectCanton.add("Puntarenas");
-			selectCanton.add("Esparza");
-			selectCanton.add("Buenos Aires");
-			selectCanton.add("Montes de Oro");
-			selectCanton.add("Osa");
-			selectCanton.add("Aguirre");
-			selectCanton.add("Golfito");
-			selectCanton.add("Coto Brus");
-			selectCanton.add("Parrita");
-			selectCanton.add("Corredores");
-			selectCanton.add("Garabito");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('Puntarenas', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('Esparza', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('Buenos Aires', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('Montes de Oro', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('Osa', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('Aguirre', '6');
+			selectCanton.options[selectCanton.options.length]= new Option('Golfito', '7');
+			selectCanton.options[selectCanton.options.length]= new Option('Coto Brus', '8');
+			selectCanton.options[selectCanton.options.length]= new Option('Parrita', '9');
+			selectCanton.options[selectCanton.options.length]= new Option('Corredores', '10');
+			selectCanton.options[selectCanton.options.length]= new Option('Garabito', '11');
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Guanacaste")
 		{
-			selectCanton.clear();
-			selectCanton.add("Liberia");
-			selectCanton.add("Nicoya");
-			selectCanton.add("Santa Cruz");
-			selectCanton.add("Bagaces");
-			selectCanton.add("Carrillo");
-			selectCanton.add("Cañas");
-			selectCanton.add("Abangares");
-			selectCanton.add("Tilarán");
-			selectCanton.add("Nandayure");
-			selectCanton.add("La Cruz");
-			selectCanton.add("Hojancha");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('Liberia', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('Nicoya', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('Santa Cruz', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('Bagaces', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('Carrillo', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('Cañas', '6');
+			selectCanton.options[selectCanton.options.length]= new Option('Abangares', '7');
+			selectCanton.options[selectCanton.options.length]= new Option('Tilarán', '8');
+			selectCanton.options[selectCanton.options.length]= new Option('Nandayure', '9');
+			selectCanton.options[selectCanton.options.length]= new Option('La Cruz', '10');
+			selectCanton.options[selectCanton.options.length]= new Option('Hojancha', '11');
 		}
 		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Cartago")
 		{
-			selectCanton.clear();
-			selectCanton.add("Cartago");
-			selectCanton.add("Paraíso");
-			selectCanton.add("La Unión");
-			selectCanton.add("Jiménez");
-			selectCanton.add("Turrialba");
-			selectCanton.add("Alvarado");
-			selectCanton.add("Oreamuno");
-			selectCanton.add("Guarco");
+			selectCanton.options.length = 0;
+			selectCanton.options[selectCanton.options.length]= new Option('(Seleccione)', '0');
+			selectCanton.options[selectCanton.options.length]= new Option('Cartago', '1');
+			selectCanton.options[selectCanton.options.length]= new Option('Paraíso', '2');
+			selectCanton.options[selectCanton.options.length]= new Option('La Unión', '3');
+			selectCanton.options[selectCanton.options.length]= new Option('Jiménez', '4');
+			selectCanton.options[selectCanton.options.length]= new Option('Turrialba', '5');
+			selectCanton.options[selectCanton.options.length]= new Option('Alvarado', '6');
+			selectCanton.options[selectCanton.options.length]= new Option('Oreamuno', '7');
+			selectCanton.options[selectCanton.options.length]= new Option('Guarco', '8');
 		}
 	}
