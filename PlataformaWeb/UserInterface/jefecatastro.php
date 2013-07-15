@@ -339,7 +339,7 @@
 										<label class="control-label" for="select01">Seleccionar Rol</label>
 										<div class="controls">
 											<select id="selectRolCrearUsuarios" name="rol" onchange="muestraConfiguracionRoles()">
-												<option value="0">(Seleccione)</option>
+												<option selected="selected" value="0">(Seleccione)</option>
 												<option value="1">Jefe de Catastro</option>
 												<option value="3">Jefe de Provincia</option>
 												<option value="4">Jefe de Cantón</option>
@@ -349,8 +349,8 @@
 									<div id="divProvinciaUsuarios" class="control-group" style="display: none">
 										<label class="control-label" for="select01">Provincia</label>
 										<div class="controls">
-											<select id="selectProvinciaUsuarios" name="provincia">
-												<option value="0">(Seleccione)</option>
+											<select id="selectProvinciaUsuarios" onchange="cambiaCantones()" name="provincia">
+												<option selected="selected" value="0">(Seleccione)</option>
 												<option value="1">San José</option>
 												<option value="2">Alajuela</option>
 												<option value="3">Cartago</option>
@@ -365,7 +365,7 @@
 										<label class="control-label" for="select01">Cantón</label>
 										<div class="controls">
 											<select id="selectCantonUsuarios" name="territorio">
-												<option value="0">Debe seleccionar el rol primero</option>
+												<option selected="selected" value="0">(Seleccione)</option>
 											</select>
 										</div>						
 									</div>

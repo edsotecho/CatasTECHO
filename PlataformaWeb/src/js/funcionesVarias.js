@@ -138,7 +138,7 @@ function muestraDiv(valorCambio)
 	
 	function muestraConfiguracionRoles()
 	{
-		var selectCrearUsuario = document.getElementById("divRolCrearUsuarios");
+		var selectCrearUsuario = document.getElementById("selectRolCrearUsuarios");
 		var selectProvincia = document.getElementById("divProvinciaUsuarios");
 		var selectCanton = document.getElementById("divCantonUsuarios");
 		if (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "(Seleccione)")
