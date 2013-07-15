@@ -138,10 +138,10 @@ function muestraDiv(valorCambio)
 	
 	function muestraConfiguracionRoles()
 	{
-		var selectCrearUsuario = document.getElementById("selectRolCrearUsuario");
-		var selectProvincia = document.getElementById("selectProvinciaUsuarios");
-		var selectCanton = document.getElementById("selectCantonUsuarios");
-		if (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "Seleccione")
+		var selectCrearUsuario = document.getElementById("divRolCrearUsuarios");
+		var selectProvincia = document.getElementById("divProvinciaUsuarios");
+		var selectCanton = document.getElementById("divCantonUsuarios");
+		if (selectCrearUsuario.options[selectCrearUsuario.selectedIndex].text == "(Seleccione)")
 		{
 			selectProvincia.style.display = "none";
 			selectCanton.style.display = "none";
@@ -169,8 +169,119 @@ function muestraDiv(valorCambio)
 	function cambiaCantones()
 	{
 		var selectProvincia = document.getElementById("selectProvinciaUsuarios");
-		if (selectProvincia.options[selectProvincia.selectedIndex].text == "San José")
+		var selectCanton = document.getElementById("selectCantonUsuarios");
+		if (selectProvincia.options[selectProvincia.selectedIndex].text == "(Seleccione)")
 		{
 			
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "San José")
+		{
+			selectCanton.clear();
+			selectCanton.add("San José");
+			selectCanton.add("Escazú");
+			selectCanton.add("Desamparados");
+			selectCanton.add("Puriscal");
+			selectCanton.add("Tarrazú");
+			selectCanton.add("Aserrí");
+			selectCanton.add("Mora");
+			selectCanton.add("Goicoechea");
+			selectCanton.add("Santa Ana");
+			selectCanton.add("Alajuelita");
+			selectCanton.add("Vásquez de Coronado");
+			selectCanton.add("Acosta");
+			selectCanton.add("Tibás");
+			selectCanton.add("Moravia");
+			selectCanton.add("Montes de Oca");
+			selectCanton.add("Turrubares");
+			selectCanton.add("Dota");
+			selectCanton.add("Curridabat");
+			selectCanton.add("Pérez Zeledón");
+			selectCanton.add("León Cortés");
+			
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Alajuela")
+		{
+			selectCanton.clear();
+			selectCanton.add("Alajuela");
+			selectCanton.add("San Ramón");
+			selectCanton.add("Grecia");
+			selectCanton.add("San Mateo");
+			selectCanton.add("Atenas");
+			selectCanton.add("Naranjo");
+			selectCanton.add("Palmares");
+			selectCanton.add("Poas");
+			selectCanton.add("Orotina");
+			selectCanton.add("San Carlos");
+			selectCanton.add("Zarcero");
+			selectCanton.add("Valverde Vega");
+			selectCanton.add("Upala");
+			selectCanton.add("Los Chiles");
+			selectCanton.add("Guatuso");
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Limón")
+		{
+			selectCanton.clear();
+			selectCanton.add("Limón");
+			selectCanton.add("Pococí");
+			selectCanton.add("Siquirres");
+			selectCanton.add("Talamanca");
+			selectCanton.add("Matina");
+			selectCanton.add("Guácimo");
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Heredia")
+		{
+			selectCanton.clear();
+			selectCanton.add("Heredia");
+			selectCanton.add("Barva");
+			selectCanton.add("Santo Domingo");
+			selectCanton.add("Santa Bárbara");
+			selectCanton.add("San Rafael");
+			selectCanton.add("San Isidro");
+			selectCanton.add("Belén");
+			selectCanton.add("Flores");
+			selectCanton.add("San Pablo");
+			selectCanton.add("Sarapiquí");
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Puntarenas")
+		{
+			selectCanton.clear();
+			selectCanton.add("Puntarenas");
+			selectCanton.add("Esparza");
+			selectCanton.add("Buenos Aires");
+			selectCanton.add("Montes de Oro");
+			selectCanton.add("Osa");
+			selectCanton.add("Aguirre");
+			selectCanton.add("Golfito");
+			selectCanton.add("Coto Brus");
+			selectCanton.add("Parrita");
+			selectCanton.add("Corredores");
+			selectCanton.add("Garabito");
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Guanacaste")
+		{
+			selectCanton.clear();
+			selectCanton.add("Liberia");
+			selectCanton.add("Nicoya");
+			selectCanton.add("Santa Cruz");
+			selectCanton.add("Bagaces");
+			selectCanton.add("Carrillo");
+			selectCanton.add("Cañas");
+			selectCanton.add("Abangares");
+			selectCanton.add("Tilarán");
+			selectCanton.add("Nandayure");
+			selectCanton.add("La Cruz");
+			selectCanton.add("Hojancha");
+		}
+		else if (selectProvincia.options[selectProvincia.selectedIndex].text == "Cartago")
+		{
+			selectCanton.clear();
+			selectCanton.add("Cartago");
+			selectCanton.add("Paraíso");
+			selectCanton.add("La Unión");
+			selectCanton.add("Jiménez");
+			selectCanton.add("Turrialba");
+			selectCanton.add("Alvarado");
+			selectCanton.add("Oreamuno");
+			selectCanton.add("Guarco");
 		}
 	}

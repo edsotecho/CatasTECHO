@@ -335,22 +335,22 @@
 										</div>
 										<p></p>						
 			              			</div>
-			              			<div id="selectRolUsuarios" class="control-group">	
+			              			<div id="divRolCrearUsuarios" class="control-group">	
 										<label class="control-label" for="select01">Seleccionar Rol</label>
 										<div class="controls">
-											<select id="selectRolCrearUsuario" name="rol" onchange="muestraConfiguracionRoles()">
-												<option value="0">Seleccione</option>
+											<select id="selectRolCrearUsuarios" name="rol" onchange="muestraConfiguracionRoles()">
+												<option value="0">(Seleccione)</option>
 												<option value="1">Jefe de Catastro</option>
 												<option value="3">Jefe de Provincia</option>
 												<option value="4">Jefe de Cantón</option>
 											</select>
 										</div>
 									</div>
-									<div id="selectProvinciaUsuarios" class="control-group">
+									<div id="divProvinciaUsuarios" class="control-group" style="display: none">
 										<label class="control-label" for="select01">Provincia</label>
 										<div class="controls">
-											<select id="" name="territorio">
-												<option value="0">Seleccione</option>
+											<select id="selectProvinciaUsuarios" name="provincia">
+												<option value="0">(Seleccione)</option>
 												<option value="1">San José</option>
 												<option value="2">Alajuela</option>
 												<option value="3">Cartago</option>
@@ -361,10 +361,10 @@
 											</select>
 										</div>						
 									</div>
-									<div id="selectCantonUsuarios" class="control-group">
+									<div id="divCantonUsuarios" class="control-group" style="display: none">
 										<label class="control-label" for="select01">Cantón</label>
 										<div class="controls">
-											<select id="" name="territorio">
+											<select id="selectCantonUsuarios" name="territorio">
 												<option value="0">Debe seleccionar el rol primero</option>
 											</select>
 										</div>						
