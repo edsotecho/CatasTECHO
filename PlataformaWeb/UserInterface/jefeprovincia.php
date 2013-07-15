@@ -16,7 +16,7 @@
     				<li class="divider-vertical"></li>
     				
     				<!-- referenciar a la página de los datos personales de cada usuario -->
-    				<li id="linkPerfilUsuario"><a href="#">Usuario</a></li>
+    				<li id="linkInfoPersonal"><a href="#">Usuario</a></li>
     			</ul>
     		</div>
     	</div>

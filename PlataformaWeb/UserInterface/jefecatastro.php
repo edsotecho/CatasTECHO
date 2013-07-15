@@ -17,7 +17,7 @@
     				<li class="divider-vertical"></li>
     				
     				<!-- referenciar a la página de los datos personales de cada usuario -->
-    				<li id="linkPerfilUsuario"><a href="#">Usuario</a></li>
+    				<li id="linkInfoPersonal"><a onClick="muestraDiv(4)">Usuario</a></li>
     			</ul>
     		</div>
     	</div>
@@ -335,20 +335,36 @@
 										</div>
 										<p></p>						
 			              			</div>
-			              			<div class="control-group">	
+			              			<div id="selectRolUsuarios" class="control-group">	
 										<label class="control-label" for="select01">Seleccionar Rol</label>
 										<div class="controls">
-											<select id="selectRolCrearUsuario" name="rol" onchange="cambiaTerritorio()">
+											<select id="selectRolCrearUsuario" name="rol" onchange="muestraConfiguracionRoles()">
 												<option value="0">Seleccione</option>
+												<option value="1">Jefe de Catastro</option>
 												<option value="3">Jefe de Provincia</option>
-												<option value="4">Jefe de Canton</option>
+												<option value="4">Jefe de Cantón</option>
 											</select>
 										</div>
 									</div>
-									<div class="control-group">
-										<label class="control-label" for="select01">Provincia/Canton</label>
+									<div id="selectProvinciaUsuarios" class="control-group">
+										<label class="control-label" for="select01">Provincia</label>
 										<div class="controls">
-											<select id="territorio" name="territorio">
+											<select id="" name="territorio">
+												<option value="0">Seleccione</option>
+												<option value="1">San José</option>
+												<option value="2">Alajuela</option>
+												<option value="3">Cartago</option>
+												<option value="4">Heredia</option>
+												<option value="5">Puntarenas</option>
+												<option value="6">Guanacaste</option>
+												<option value="7">Limón</option>
+											</select>
+										</div>						
+									</div>
+									<div id="selectCantonUsuarios" class="control-group">
+										<label class="control-label" for="select01">Cantón</label>
+										<div class="controls">
+											<select id="" name="territorio">
 												<option value="0">Debe seleccionar el rol primero</option>
 											</select>
 										</div>						
@@ -402,12 +418,11 @@
     	
     	<!-- Div Información Personal por Usuario -->
     	<div id="divInfoPersonal" class="row-fluid" style="display: none">
-    		<h3>Mi Cuenta</h3>
     		<div class="span1">
        	 		<!-- espacio vacío -->
       		</div>
       		<div class="span10">
-       	 		
+       	 		<h3>Mi Cuenta</h3>
       		</div>
       		<div class="span1">
        	 		<!-- espacio vacío -->
